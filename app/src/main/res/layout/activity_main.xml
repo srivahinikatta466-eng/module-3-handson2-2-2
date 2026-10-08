@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Web URL Section -->
+        <EditText
+            android:id="@+id/etWebUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Web URL"
+            android:inputType="textUri" />
+
+        <Button
+            android:id="@+id/btnOpenWeb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Open Web Page" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+        <!-- Email Section -->
+        <EditText
+            android:id="@+id/etEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/etEmailSubject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email Subject" />
+
+        <EditText
+            android:id="@+id/etEmailBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:hint="Email Body"
+            android:lines="3" />
+
+        <Button
+            android:id="@+id/btnSendEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send Email" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+        <!-- Share Section -->
+        <EditText
+            android:id="@+id/etShareText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Text to share" />
+
+        <Button
+            android:id="@+id/btnShareText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Share Text" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+        <!-- Phone Section -->
+        <Button
+            android:id="@+id/btnDialPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dial Phone Number" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+        <!-- Maps Section -->
+        <Button
+            android:id="@+id/btnOpenMaps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Open Maps Location" />
+
+    </LinearLayout>
+</ScrollView>
